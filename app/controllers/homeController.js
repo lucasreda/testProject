@@ -33,10 +33,6 @@ app.controller('homeController', function($scope) {
         };
     
     
-        $scope.deleteItem = function(index){
-            $scope.itens.splice(index, 1);
-            toastr.success("Item removido com sucesso.");
-           
-        };
+        
 
 });

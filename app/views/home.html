@@ -46,7 +46,7 @@
 									<th>Nome</th>
 									<th>Email</th>
 									<th >Mensagem</th>
-									<th></th>
+									
 								</tr>
 							</thead>
 							<tbody>
@@ -55,11 +55,6 @@
 									<td><strong>{{ item.nome}}</strong></td>
 									<td>{{ item.email }}</td>
 									<td>{{ item.mensagem }}</td>
-									<td>
-										<button class="btn btn-danger btn-small" ng-click="deleteItem($index)">
-											<i class="icon-trash icon-white"></i> X
-										</button>
-									</td>
 								</tr>
 							</tbody>
 						</table>
