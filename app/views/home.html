@@ -1,0 +1,74 @@
+<!-- home.html -->
+
+		<div class="col-md-12 pageBox">
+		
+			
+			<button class="btn btn-primary right pull-right" ng-show="exibirBotao" ng-click="buttonAdd()">+</button>
+			<button class="btn btn-primary right pull-right" ng-show="fecharBotao" ng-click="fecharAdd()">X</button>
+
+<!-- Formulário de Add -->
+			<form ng-show="showAdicionar" ng-submit="adicionaItem()">
+
+					<h2 class="pageTitle text-center">Insira seus dados</h2>
+					<hr>
+				 
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+								<label for="nome">Nome</label>
+								<input type="text" class="form-control" id="nome" ng-model="item.nome" placeholder="Digite seu nome completo" required>
+							</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" ng-model="item.email" placeholder="Digite seu Email" required>
+							<small id="emailHelp" class="form-text text-muted">Fique tranquilo, você está livre de spams.</small>
+						</div>
+			  	</div>
+				</div>	
+				
+					
+					<div class="form-group">
+							<label for="mensagem">Mensagem</label>
+							<textarea class="form-control" id="mensagem" ng-model="item.mensagem" rows="3" required></textarea>
+					</div>
+
+        	<button type="submit" class="btn btn-primary right pull-right">Enviar</button>
+				</form>
+<!-- Fim Formulário -->
+
+<!-- Tabela -->
+				<div class="row">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Nome</th>
+									<th>Email</th>
+									<th >Mensagem</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="item in itens | filter:pesquisa">
+								
+									<td><strong>{{ item.nome}}</strong></td>
+									<td>{{ item.email }}</td>
+									<td>{{ item.mensagem }}</td>
+									<td>
+										<button class="btn btn-danger btn-small" ng-click="deleteItem($index)">
+											<i class="icon-trash icon-white"></i> X
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+			<!-- Fim Tabela -->
+
+	</div>
+
+
+
+
+	

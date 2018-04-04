@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>Projeto de Teste - Strategic IT</title>
+    <meta charset="utf-8">
+    <!-- css -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./app/assets/css/style.css">
+    <!-- Javascript -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/controllers/homeController.js"></script>
+  </head>
+  <body>
+
+
+    <div class="container">
+        <!-- menu -->
+
+      
+
+        <header class="row">
+          <div class="col-sm-6 col-md-6">
+      	<ul class="nav menu">
+        	<li ng-class="{active: activetab == '/'}"><a href="#/">Home</a></li>
+	        <li ng-class="{active: activetab == '/sobre'}"><a href="#/sobre">Sobre</a></li>
+         </ul>
+        </div>
+        <div class="col-sm-6 col-md-6">
+         <h1><img class="logo img-responsive" src="http://www.strategicit.com.br/images/logo.png" /></h1>
+        </div>
+        </header>
+        <!-- views -->
+        <div ng-view></div>
+    </div>
+    <div class="text-center  creditos">Projeto de Teste desenvolvido por Lucas Alencar.</div>
+  </body>
+</html>

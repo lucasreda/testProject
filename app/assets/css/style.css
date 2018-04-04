@@ -1,0 +1,61 @@
+body{
+    background: #263238;
+    font-family: Raleway !important;
+}
+
+hr{
+    border: 1px solid #CFD8DC;
+}
+
+header{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.logo{
+    float: right;   
+}
+
+@media (max-width: 767px) 
+{
+  .logo{
+      width: 120px;
+      margin-top: -70px;
+  }
+}
+
+.menu{}
+.menu li{
+  float: left;
+  background: #455A64;
+  margin: 15px;
+  border-radius: 3px;
+  color: #FFF;
+}
+.menu li a{ color: #FFF !important;}
+.menu li a:hover{ color: #263238 !important; }
+
+
+.pageBox{
+    background: #FFF;
+    padding: 25px;
+    padding-bottom: 50px;
+}
+
+.pageTitle{
+    color: #455A64;
+}
+
+form{
+    margin-bottom: 100px !important;
+}
+
+.creditos{
+    margin-top: 10px;
+    color: #B0BEC5;
+    bottom: 0;
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
