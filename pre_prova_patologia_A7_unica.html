@@ -2,47 +2,72 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Pré-prova Patologia A7 única</title>
+<title>Pré-prova Patologia A7 frente e verso</title>
 <style>
   @page { size: 74mm 105mm; margin: 1.8mm; }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { font-family: "DejaVu Sans Condensed", "DejaVu Sans", Arial, sans-serif; font-size: 4.0pt; line-height: 1.09; color: #000; }
+  body { font-family: "DejaVu Sans Condensed", "DejaVu Sans", Arial, sans-serif; font-size: 3.95pt; line-height: 1.07; color: #000; }
   table { border-collapse: collapse; width: 100%; table-layout: fixed; }
-  td { border: 0.35pt solid #333; padding: 0.55pt 1.3pt; vertical-align: top; }
-  td.q { width: 22%; font-weight: bold; background: #e4e9f2; }
+  td { border: 0.35pt solid #333; padding: 0.5pt 1.3pt; vertical-align: top; }
+  td.q { width: 19%; font-weight: bold; background: #e4e9f2; }
+  tr { break-inside: avoid; }
   tr.g td { border-top: 1.1pt solid #000; }
   b.k { color: #7a1010; }
+  .verso { break-before: page; }
 </style>
 </head>
 <body>
+
+<!-- ===================== FRENTE ===================== -->
 <table>
-<!-- Hemostasia -->
 <tr class="g"><td class="q">Aspirina</td><td>↑ T. sangramento — inibe COX-1 → ↓TXA₂, plaqueta não agrega</td></tr>
 <tr><td class="q">Hemofilia (hemartrose, avô materno)</td><td>↑ TTP — falta fator VIII/IX (via intrínseca)</td></tr>
 <tr><td class="q">PTI (criança pós-viral, corticoide)</td><td>↑ T. sangramento + ↓ plaquetas — autoanticorpos anti-plaqueta</td></tr>
 <tr><td class="q">Varfarina</td><td>↑ TP — antagonista da vit. K (↓ II, VII, IX, X)</td></tr>
 <tr><td class="q">Má absorção intestinal</td><td>↑ TP + ↑ TTP — falta de vit. K (lipossolúvel) → ↓ II, VII, IX, X</td></tr>
 
-<!-- Choque -->
 <tr class="g"><td class="q">Choque: anestésico, comida</td><td>Anafilático</td></tr>
 <tr><td class="q">Choque: TNF / membros quentes</td><td>Séptico</td></tr>
 <tr><td class="q">Choque: tamponamento</td><td>Cardiogênico (obstrutivo)</td></tr>
 <tr><td class="q">Choque: hemorragia interna</td><td>Hipovolêmico (hemorrágico)</td></tr>
 
-<!-- Casos -->
-<tr class="g"><td class="q">Tríade de Virchow + inibidor COX-2: prognóstico</td><td>Um componente da tríade é a <b class="k">hipercoagulabilidade</b> (outros: lesão endotelial, estase), exacerbada pelo inibidor seletivo de COX-2 (ex.: celecoxib): <b>inibe PGI₂</b> (vasodilatadora e antiagregante) <b>sem afetar TXA₂</b> plaquetário (pró-trombótico) → desequilíbrio da homeostase vascular. <b>Prognóstico: maior risco de trombose arterial (ex.: infarto)</b>, especialmente se já houver lesão endotelial ou estase.</td></tr>
-<tr><td class="q">Psamomas: formação e prognóstico</td><td>Estruturas arredondadas e lamelares de calcificação: deposição progressiva de cálcio sobre restos celulares degenerados ou material hialino. Em tumores de crescimento lento e bem diferenciados (papilífero de tireoide, meningioma, seroso de ovário). Baixo grau → <b>geralmente melhor prognóstico</b> (depende do tipo e estágio).</td></tr>
+<tr class="g"><td class="q">Tríade de Virchow + inibidor COX-2: prognóstico (cite 1 fator e a metabolização)</td><td>Um componente da tríade é a <b class="k">hipercoagulabilidade</b> (outros: lesão endotelial, estase), exacerbada pelo inibidor seletivo de COX-2 (ex.: celecoxib).<br>
+<b>Metabolização:</b> ác. araquidônico → <b>COX-1</b> (plaqueta) → <b>TXA₂</b> (pró-trombótico, vasoconstritor) · → <b>COX-2</b> (endotélio) → <b>PGI₂</b> (vasodilatadora, antiagregante). O inibidor bloqueia só a COX-2: <b>↓ PGI₂ sem afetar TXA₂</b> → desequilíbrio da homeostase vascular. (Celecoxib é metabolizado no fígado pela CYP2C9.)<br>
+<b>Prognóstico: maior risco de trombose arterial (ex.: infarto)</b>, especialmente se já houver lesão endotelial ou estase.</td></tr>
+<tr><td class="q">Psamomas: formação e prognóstico</td><td>Estruturas arredondadas e lamelares de calcificação: deposição progressiva de cálcio sobre restos celulares degenerados ou material hialino, em tumores de crescimento lento e bem diferenciados (papilífero de tireoide, meningioma, seroso de ovário). Baixo grau → <b>geralmente melhor prognóstico</b> (depende do tipo e estágio).</td></tr>
 <tr><td class="q">Pérolas córneas</td><td><b>Carcinoma espinocelular</b> (escamoso) — camadas concêntricas de queratina</td></tr>
 <tr><td class="q">Trombo da panturrilha desloca</td><td><b>Êmbolo</b> → <b>artéria pulmonar (TEP)</b> · sinal: dispneia súbita + dor pleurítica e/ou hemoptise · exame: <b>D-dímero</b></td></tr>
 <tr><td class="q">Homem 31a, esquizócitos, plaquetas 9.000</td><td><b>PTT</b>: esquizócitos = anemia hemolítica microangiopática; plaquetopenia grave por trombos plaquetários; ↓ ADAMTS13 → multímeros ultragrandes de vWF. Febre, neuro, renal. TP/TTP normais (≠ CIVD).</td></tr>
-<tr><td class="q">CIVD: choque séptico / embolia líquida</td><td>Séptico: endotoxina (LPS) + TNF/IL-1 → fator tecidual e lesão endotelial · Líquida: líquido amniótico (fator tecidual, material pró-coagulante)</td></tr>
 
-<!-- Nomenclatura, câncer -->
-<tr class="g"><td class="q">Benigno → maligno</td><td>Fibroma → Fibrossarcoma · Papiloma céls. basais → Carcinoma basocelular · Hemangioma → Hemangiossarcoma · Adenoma → Adenocarcinoma · Nevo → Melanoma</td></tr>
+<tr class="g"><td class="q">Inflamação A: endotélio, relaxa músculo liso</td><td><b>Óxido nítrico (NO)</b> — vasodilatação</td></tr>
+<tr><td class="q">B: complemento que opsoniza</td><td><b>C3b</b> (e iC3b)</td></tr>
+<tr><td class="q">C: XII ativado por ___ → forma ___ (heparina)</td><td>Ativado por <b>contato com superfície de carga negativa</b> (colágeno/membrana basal exposta, plaquetas ativadas) → forma <b>trombina</b> (heparina age via antitrombina III)</td></tr>
+<tr><td class="q">D: plasminogênio → ___ degrada ___</td><td>Plasminogênio → <b>plasmina</b>, que degrada a <b>fibrina</b></td></tr>
+<tr><td class="q">E: XIIa: pré-calicreína → ?</td><td><b>Calicreína</b> (cliva cininogênio → bradicinina)</td></tr>
+
+</table>
+
+<!-- ===================== VERSO ===================== -->
+<table class="verso">
+<tr class="g"><td class="q">CIVD: choque séptico / embolia líquida</td><td>Séptico: endotoxina (LPS) + TNF/IL-1 → fator tecidual e lesão endotelial · Líquida: líquido amniótico (fator tecidual, material pró-coagulante)</td></tr>
+<tr><td class="q">Correlacione pólipo (A) / adenoma (B) / papiloma (C)</td><td>1 sem eixo de sustentação central · 2 pode ser benigno ou maligno · 3 benigno de tecido glandular · 4 causa: HPV<br><b>C, A, B, C</b> (gabarito oficial 25.1): 1 = C papiloma · 2 = A pólipo · 3 = B adenoma · 4 = C papiloma</td></tr>
+<tr><td class="q">Benigno → maligno</td><td>Fibroma → Fibrossarcoma · Papiloma céls. basais → Carcinoma basocelular · Hemangioma → Hemangiossarcoma · Adenoma → Adenocarcinoma · Nevo → Melanoma</td></tr>
 <tr><td class="q">Esquema do cólon</td><td>Normal→hiperprolif.: <b>perda de APC</b> · →adenoma pequeno: <b>hipometilação do DNA</b> · →adenoma grande: <b>ativação de KRAS</b> · →carcinoma: <b>perda de TP53</b> (+18q); hallmark: <b>evasão da apoptose / instabilidade genômica</b></td></tr>
 <tr><td class="q">CXCL12 (somatória)</td><td>Certas: CpG em promotores · liga CXCR4 se U · M → + metástase. Errada: + expressão = + metástase. <b>24.2: 1+2+12 = 15</b> (23.2: 01+02+08 = 11)</td></tr>
 <tr><td class="q">CEC × CBC</td><td><b>CEC:</b> pontes intercelulares, queratina, pérolas córneas · <b>CBC:</b> células pequenas basofílicas, núcleo hipercromático, paliçada periférica, sem queratina</td></tr>
+
+<tr class="g"><td class="q">Tipos de sangramento</td><td><b>Hematêmese</b> = vômito com sangue (úlcera gástrica) · <b>Melena</b> = fezes escuras, sangue digerido (TGI alto; falta de vit. K) · <b>Hemoptise</b> = sangue do trato respiratório, tosse (tuberculose) · <b>Epistaxe</b> = nariz · <b>Hemartrose</b> = articulação (hemofilia) · <b>Hemotórax</b> = cavidade pleural.</td></tr>
+<tr><td class="q">Lesões de pele</td><td><b>Petéquia</b> = hemorragia puntiforme por trombocitopenia/disfunção plaquetária · <b>Equimose</b> = hematoma superficial maior · <b>Hematoma</b> = sangue acumulado no tecido · equimose amarelada = <b>bilirrubina</b> (biliverdina é verde; hemossiderina, marrom)</td></tr>
+<tr><td class="q">Plaquetário × coagulação</td><td><b>Plaquetário/vascular:</b> imediato, superficial/mucocutâneo (epistaxe, petéquias, equimoses) · <b>Coagulação:</b> tardio, profundo (hemartrose, hematomas musculares)</td></tr>
+<tr><td class="q">Doenças</td><td><b>Hemofilia</b> = fator VIII/IX (plaquetas normais) · <b>vWD</b> = defeito de adesão (nº de plaquetas normal) · <b>PTI</b> = ↓ plaquetas</td></tr>
+<tr><td class="q">Coágulo × trombo × êmbolo</td><td><b>Coágulo</b> = sangue coagulado fora do sistema circulatório · <b>Trombo</b> = massa dentro do vaso (trombose = ativação <i>patológica</i>) · <b>Êmbolo</b> = massa transportada na circulação (trombo, gordura, ar, líquido amniótico; sólida, líquida ou gasosa)</td></tr>
+<tr><td class="q">Trombo venoso × arterial</td><td><b>Venoso:</b> vermelho, estase, mais hemácias + fibrina (cumarínico) · <b>Arterial:</b> branco, lesão endotelial/turbulência (bifurcações, aterosclerose), mais plaquetas (aspirina)</td></tr>
+<tr><td class="q">Predisponentes</td><td>Estase <b>concentra</b> fatores (não dilui) · <b>↑</b> fibrinogênio predispõe · gestação/pós-operatório = hipercoagulabilidade (+ estase) · imobilização = estase venosa → TVP → TEP · êmbolo na carótida → AVC · aterosclerose = lesão endotelial</td></tr>
+<tr><td class="q">Endotélio antitrombótico</td><td>NO, PGI₂, trombomodulina, heparan sulfato, t-PA (não "proteínas semelhantes à histamina")</td></tr>
+<tr><td class="q">Neoplasias</td><td><b>Benigno:</b> expansivo, bem diferenciado · <b>Maligno:</b> anaplasia (ausência de diferenciação), pleomorfismo, invasão · <b>Displasia</b> = desordem de maturação (≠ anaplasia) · <b>Leiomioma/leiomiossarcoma</b> = músculo liso · <b>Rabdomiossarcoma</b> = músculo estriado · Papiloma: eixo conjuntivo (P2) × "sem eixo central" (gabarito 25.1)</td></tr>
+<tr><td class="q">Carcinógenos</td><td>Radiação: <b>menor</b> comprimento de onda (UV, ionizante) · Vírus: HBV, HTLV-1, HPV, EBV</td></tr>
+<tr><td class="q">Cicatrização no diabetes</td><td>↓ angiogênese · ↑ MMP (↓ TIMP) · ↓ contração da ferida · colágeno ↓ e desorganizado · predomina macrófago M1 (M2 reduzido)</td></tr>
 </table>
 </body>
 </html>
