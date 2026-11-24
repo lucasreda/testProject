@@ -7,10 +7,10 @@
   @page { size: 74mm 105mm; margin: 1.8mm; }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { font-family: "DejaVu Sans Condensed", "DejaVu Sans", Arial, sans-serif; font-size: 3.95pt; line-height: 1.07; color: #000; }
+  body { font-family: "DejaVu Sans Condensed", "DejaVu Sans", Arial, sans-serif; font-size: 4.35pt; line-height: 1.07; color: #000; }
   table { border-collapse: collapse; width: 100%; table-layout: fixed; }
   td { border: 0.35pt solid #333; padding: 0.5pt 1.3pt; vertical-align: top; }
-  td.q { width: 19%; font-weight: bold; background: #e4e9f2; }
+  td.q { overflow-wrap: anywhere; width: 21%; font-weight: bold; background: #e4e9f2; }
   tr { break-inside: avoid; }
   tr.g td { border-top: 1.1pt solid #000; }
   b.k { color: #7a1010; }
@@ -25,12 +25,10 @@
 <tr><td class="q">Hemofilia (hemartrose, avô materno)</td><td>↑ TTP — falta fator VIII/IX (via intrínseca)</td></tr>
 <tr><td class="q">PTI (criança pós-viral, corticoide)</td><td>↑ T. sangramento + ↓ plaquetas — autoanticorpos anti-plaqueta</td></tr>
 <tr><td class="q">Varfarina</td><td>↑ TP — antagonista da vit. K (↓ II, VII, IX, X)</td></tr>
+<tr><td class="q">CIVD / von Willebrand</td><td><b>CIVD:</b> ↑ T. sangramento, ↓ plaquetas, ↑ TP, ↑ TTP (consumo de plaquetas e fatores; ↑ fibrinólise, ↑ D-dímero)<br><b>vWD:</b> ↑ T. sangramento + ↑ TTP, plaquetas normais (vWF faz adesão e carrega o fator VIII)</td></tr>
 <tr><td class="q">Má absorção intestinal</td><td>↑ TP + ↑ TTP — falta de vit. K (lipossolúvel) → ↓ II, VII, IX, X</td></tr>
 
-<tr class="g"><td class="q">Choque: anestésico, comida</td><td>Anafilático</td></tr>
-<tr><td class="q">Choque: TNF / membros quentes</td><td>Séptico</td></tr>
-<tr><td class="q">Choque: tamponamento</td><td>Cardiogênico (obstrutivo)</td></tr>
-<tr><td class="q">Choque: hemorragia interna</td><td>Hipovolêmico (hemorrágico)</td></tr>
+<tr class="g"><td class="q">Tipo de choque</td><td>Anestésico, remédio, comida = <b>anafilático</b> · TNF / membros quentes = <b>séptico</b> · Tamponamento cardíaco = <b>cardiogênico</b> (obstrutivo) · Hemorragia interna, agitado = <b>hipovolêmico</b> (hemorrágico)</td></tr>
 
 <tr class="g"><td class="q">Tríade de Virchow + inibidor COX-2: prognóstico (cite 1 fator e a metabolização)</td><td>Um componente da tríade é a <b class="k">hipercoagulabilidade</b> (outros: lesão endotelial, estase), exacerbada pelo inibidor seletivo de COX-2 (ex.: celecoxib).<br>
 <b>Metabolização:</b> ác. araquidônico → <b>COX-1</b> (plaqueta) → <b>TXA₂</b> (pró-trombótico, vasoconstritor) · → <b>COX-2</b> (endotélio) → <b>PGI₂</b> (vasodilatadora, antiagregante). O inibidor bloqueia só a COX-2: <b>↓ PGI₂ sem afetar TXA₂</b> → desequilíbrio da homeostase vascular. (Celecoxib é metabolizado no fígado pela CYP2C9.)<br>
@@ -40,18 +38,14 @@
 <tr><td class="q">Trombo da panturrilha desloca</td><td><b>Êmbolo</b> → <b>artéria pulmonar (TEP)</b> · sinal: dispneia súbita + dor pleurítica e/ou hemoptise · exame: <b>D-dímero</b></td></tr>
 <tr><td class="q">Homem 31a, esquizócitos, plaquetas 9.000</td><td><b>PTT</b>: esquizócitos = anemia hemolítica microangiopática; plaquetopenia grave por trombos plaquetários; ↓ ADAMTS13 → multímeros ultragrandes de vWF. Febre, neuro, renal. TP/TTP normais (≠ CIVD).</td></tr>
 
-<tr class="g"><td class="q">Inflamação A: endotélio, relaxa músculo liso</td><td><b>Óxido nítrico (NO)</b> — vasodilatação</td></tr>
-<tr><td class="q">B: complemento que opsoniza</td><td><b>C3b</b> (e iC3b)</td></tr>
-<tr><td class="q">C: XII ativado por ___ → forma ___ (heparina)</td><td>Ativado por <b>contato com superfície de carga negativa</b> (colágeno/membrana basal exposta, plaquetas ativadas) → forma <b>trombina</b> (heparina age via antitrombina III)</td></tr>
-<tr><td class="q">D: plasminogênio → ___ degrada ___</td><td>Plasminogênio → <b>plasmina</b>, que degrada a <b>fibrina</b></td></tr>
-<tr><td class="q">E: XIIa: pré-calicreína → ?</td><td><b>Calicreína</b> (cliva cininogênio → bradicinina)</td></tr>
+<tr class="g"><td class="q">Inflamação aguda (A–E)</td><td><b>A</b> endotélio, relaxa músculo liso = <b>óxido nítrico (NO)</b> · <b>B</b> complemento que opsoniza = <b>C3b</b> (e iC3b) · <b>C</b> fator XII ativado por <b>contato com superfície de carga negativa</b> (colágeno/membrana basal exposta, plaquetas ativadas) → forma <b>trombina</b>, inativada pela heparina (via antitrombina III) · <b>D</b> plasminogênio → <b>plasmina</b>, degrada a <b>fibrina</b> · <b>E</b> XIIa: pré-calicreína → <b>calicreína</b> (→ bradicinina)</td></tr>
 
+<tr><td class="q">CIVD: choque séptico / embolia líquida</td><td>Séptico: endotoxina (LPS) + TNF/IL-1 → fator tecidual e lesão endotelial · Líquida: líquido amniótico (fator tecidual, material pró-coagulante)</td></tr>
 </table>
 
 <!-- ===================== VERSO ===================== -->
 <table class="verso">
-<tr class="g"><td class="q">CIVD: choque séptico / embolia líquida</td><td>Séptico: endotoxina (LPS) + TNF/IL-1 → fator tecidual e lesão endotelial · Líquida: líquido amniótico (fator tecidual, material pró-coagulante)</td></tr>
-<tr><td class="q">Correlacione pólipo (A) / adenoma (B) / papiloma (C)</td><td>1 sem eixo de sustentação central · 2 pode ser benigno ou maligno · 3 benigno de tecido glandular · 4 causa: HPV<br><b>C, A, B, C</b> (gabarito oficial 25.1): 1 = C papiloma · 2 = A pólipo · 3 = B adenoma · 4 = C papiloma</td></tr>
+<tr class="g"><td class="q">Correlacione pólipo / adenoma / papiloma</td><td><b>Pólipo</b> (pode ser maligno ou benigno) | <b>Adenoma</b> (benigno de tecido glandular) | <b>Papiloma</b> (sem eixo central; HPV)<br>Sequência 25.1: <b>C, A, B, C</b></td></tr>
 <tr><td class="q">Benigno → maligno</td><td>Fibroma → Fibrossarcoma · Papiloma céls. basais → Carcinoma basocelular · Hemangioma → Hemangiossarcoma · Adenoma → Adenocarcinoma · Nevo → Melanoma</td></tr>
 <tr><td class="q">Esquema do cólon</td><td>Normal→hiperprolif.: <b>perda de APC</b> · →adenoma pequeno: <b>hipometilação do DNA</b> · →adenoma grande: <b>ativação de KRAS</b> · →carcinoma: <b>perda de TP53</b> (+18q); hallmark: <b>evasão da apoptose / instabilidade genômica</b></td></tr>
 <tr><td class="q">CXCL12 (somatória)</td><td>Certas: CpG em promotores · liga CXCR4 se U · M → + metástase. Errada: + expressão = + metástase. <b>24.2: 1+2+12 = 15</b> (23.2: 01+02+08 = 11)</td></tr>
